@@ -1,0 +1,43 @@
+.vscode/
+.DS_Store
+*.o
+*.a
+*.so
+*.dylib
+build/
+*.log
+*.swp
+*~
+.cache/
+compile_commands.json
+
+# Coverage reports
+*.gcov
+*.gcda
+*.gcno
+coverage.info
+coverage_filtered.info
+coverage_html/
+lcov.info
+
+# Test artifacts
+test_logs/
+test_results/
+
+# Data and plots
+logs/
+plots/
+*.csv
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+.*.swp
