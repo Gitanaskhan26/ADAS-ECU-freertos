@@ -1,0 +1,20 @@
+# Docker Compose for ADAS ECU Development
+version: '3.8'
+
+services:
+  adas_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: adas_ecu_dev
+    privileged: true
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    devices:
+      - /dev/net/tun

@@ -1,0 +1,15 @@
+# pyrightconfig.json - Python type checking configuration
+{
+  "include": [
+    "scripts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "build"
+  ],
+  "typeCheckingMode": "basic",
+  "reportMissingImports": false,
+  "reportMissingModuleSource": false,
+  "pythonVersion": "3.10"
+}

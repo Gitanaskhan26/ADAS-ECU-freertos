@@ -1,0 +1,28 @@
+{
+  "name": "ADAS ECU",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "adas_dev",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "C_Cpp.default.compilerPath": "/usr/bin/g++",
+        "C_Cpp.default.cStandard": "c17",
+        "C_Cpp.default.cppStandard": "c++17",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-arm64",
+        "C_Cpp.errorSquiggles": "enabled",
+        "cmake.cmakePath": "/usr/bin/cmake",
+        "cmake.configureOnOpen": false,
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      }
+    }
+  },
+  "postCreateCommand": "echo '✅ ADAS ECU Dev Container Ready'",
+  "remoteUser": "root"
+}
